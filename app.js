@@ -102,5 +102,6 @@ bot.onText(/\/weather/, function(msg, match){   //создание команд�
 bot.on("message", function(msg){
     saveUser(msg.chat.username, msg.chat.id);
 })
-app.listen(8080);
 let port = process.env.PORT === underfined ? 3030 : process.env.PORT;
+app.listen(port);
+
